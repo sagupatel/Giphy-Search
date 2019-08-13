@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gif Search</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style >
+        button,
+        div,
+        form,
+        input {
+          margin: 15px;
+        }
+
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search for Gifs here</h1>
+                    
+        <button data-topic="happy">Happy</button>
+        <button data-topic="confused">Confused</button>
+        <button data-topic="sad">Sad</button>
+        <button data-topic="angry">Angry</button>
+        <button data-topic="blah">Blah</button>
+        
+    <div id="buttons-view"></div>
+
+    <form id="topic-form">
+      <label for="topic-input">How do you feel??</label>
+      <input type="text" id="topic-input">
+      <br>
+      <input id="add-topic" type="submit" value="Add some emotion">
+    </form>
+    <div id="topic-view"></div>
+  <div id="gif-add">
+  </div>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
